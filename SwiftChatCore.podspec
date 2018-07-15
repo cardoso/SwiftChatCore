@@ -31,7 +31,9 @@ Core structures and utilities for SwiftChat
   s.ios.deployment_target = '8.0'
   s.swift_version = '4.1'
 
-  s.source_files = 'Sources/**/*'
+  s.subspec 'Models' do |s|
+    s.source_files = 'Sources/Models/*.swift'
+  end
   
   # s.resource_bundles = {
   #   'SwiftChatCore' => ['Assets/*.png']
